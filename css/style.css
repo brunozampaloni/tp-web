@@ -1,0 +1,33 @@
+body{                                
+    background-color: gray ;
+}
+.inicio{
+    background-color: rgb(43, 27, 27);
+}
+.wiki{
+    background-color: blueviolet;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centra horizontal */
+    align-items: center; 
+}
+
+
+.hola{
+    background-color: blueviolet;
+}
+
+img{
+display: block;
+margin: 0 auto;
+    }
+
+
+
+#rojo{
+    color: #0666cf;
+}
+.azul{
+    color:blue; 
+}
+
