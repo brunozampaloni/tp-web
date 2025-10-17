@@ -1,0 +1,205 @@
+
+* {/*con esot reseto el css*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(82, 82, 75);
+    padding-top: 80px; /* altura para que la barra de nav no tape el body */
+}
+
+
+/* todo esto es para la barra de nav*/
+.nav{
+    position: fixed; /* que siempre se encuentre arriba ña barra de navegacion*/
+    top: 0%;   /* posicion de la barra de nav*/
+    left: 0%;
+    right: 0%;
+    width: 100%;
+    height: 120;
+    background-color: rgb(33, 32, 32);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*hace que lo que esta primero va a la izq y lo ultimo a la dere (preguntar si esta bien usar esto)*/
+    padding: 0 40px;/*la distancia con el borde del logo y los links*/
+    z-index: 10;/* hace que este por arriba de otros elementos */
+}
+.lista{
+    display: flex;/*para acomodarlos en linea */
+    gap: 20px;/**/
+}
+.lista a{
+    color: white;
+    text-transform: uppercase;/*todo el mayusculas*/
+    padding: 15px;/*distancia entre textos*/
+    text-decoration: none;/*saca la linea del link*/
+}
+
+.logo img{
+     height: 60px; /* tamaño del logo */
+    width: auto;
+}
+
+.logo a{
+    display: flex;
+    align-items: center; 
+}
+
+nav a:hover { /*que cambie de color solo en el nav*/
+    color: rgb(230, 49, 56);
+}
+
+
+
+
+
+/* todo para el main*/
+
+main{
+    width: 1200px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3); /*esto agrega el contorno con sombra repasar despues*/
+    border-radius: 10px;
+}
+
+h1, h2 {
+    margin-left: 20PX;
+    left: 20%;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+p {
+    margin-left: 20PX;
+    margin-right: 20PX;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+.inicio img{
+    margin-bottom: 20px;
+    border-end-start-radius: 50%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3); /*esto agrega el contorno con sombra repasar despues*/
+}
+
+.imagen-final img{
+    border-radius: 10px;
+    margin-bottom: -5px;
+}
+
+iframe{ /*para el video de youtube*/
+    display: block;     
+    margin: 0 auto;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3); /*esto agrega el contorno con sombra repasar despues*/
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.grupode2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /*hace que lo que esta primero va a la izq y lo ultimo a la dere (preguntar si esta bien usar esto)*/
+    margin-bottom: 20px;
+}
+.grupo{
+    display: flex;
+}
+.uno p{
+    max-width: 90%;
+}
+.dos img{
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3); /*esto agrega el contorno con sombra repasar despues*/
+    margin-bottom: 20px;
+}
+.uno img{
+    margin-right: 20px;
+    margin-left: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3); /*esto agrega el contorno con sombra repasar despues*/
+    margin-bottom: 20px;
+}
+
+/*ESTO ES SOLO PARA LOS LIBROS */
+.tomos{
+    background-color:  rgb(33, 32, 32);
+    padding: 80px 0 ;/*espacio en el footer*/
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.tomos-orden{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;/*hace que se junte en una sola linea, si no quedan pasa a la siguiente linea*/
+    justify-content: center;
+    align-items: center;
+}
+.tomos-orden img {
+    width: 200px; 
+    border-radius: 5px;
+}
+
+
+
+
+/* todo esto es para el footer*/
+
+
+.footer{
+    background-color:  rgb(33, 32, 32);
+    padding: 80px 0 ;/*espacio en el footer*/
+}
+
+.footer-container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;/*hace que se junte en una sola linea, si no quedan pasa a la siguiente linea*/
+}
+
+.footer-links{
+    flex-grow: 1;    /*esto es para que se acomode mejor los link y los saltos de linea*/
+    flex-shrink: 1;
+    flex-basis: 200px;
+}
+
+.footer-links h4{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 25px; /* distancia de texto hacia bajo*/
+    border-bottom: 2px solid white;/*linea debajo del titul*/
+    padding-bottom: 5px;
+}
+
+.footer ul li a{
+    color: #bbbbbb;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    margin: 0 auto;
+
+}
+.redes a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s ease; /*tiempo del cambio*/
+}
+.footer-links a:hover { /*que cambie de color solo en el footer*/
+    color: rgb(230, 49, 56);
+}
+.redes a img:hover{
+    transform: scale(1.05);/* cambio del escalado   (repasarlo despues)  */
+}

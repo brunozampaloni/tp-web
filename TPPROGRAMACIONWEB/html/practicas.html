@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+   
+    <title>Document</title>
+
+<style>
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    align-items: center;
+    background-color: cornsilk;
+    height: 10vh;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+
+main{
+    min-height: 200vh;
+}
+#menu{
+    height:100vh;
+    width: 400px;
+    position: fixed;
+    top: 10vh;
+    right: -1000px;
+    transition: right .7s ease;
+    background-color: yellow;
+}
+
+menu:target{
+right: 0;
+}
+#cerrar{
+    display: none;
+}
+#menu:target #abrir{
+display: none;
+}
+#menu:target #cerrar{
+    display: inline-block;
+}
+
+.burger{
+    display: block;
+    text-align: center;
+    background-color: beige;
+    border: 1px solid green;
+    font-size: 2rem;
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+
+    
+
+        <div id="menu">
+            <a href="Iindex.html" class="burger">inicio</a>
+            <a href="html/primera.html" class="burger">historia</a>
+            <a href="html/segunda.html" class="burger">libro</a>
+            <a href="html/tercera.html" class="burger">arte</a>
+            <a href="html/cuarta.html" class="burger">contacto</a>
+        </div>
+
+
+<header>
+        <nav>
+            <a href="#menu" id="abrir"><img src="/recursos/imagenes/boleto.png" alt=""></a>
+            <a href="#menu" id="cerrar"><img src="/recursos/imagenes/boleto.png" alt=""></a>
+
+        </nav>
+</header>
+<main>
+</main>
+
+    
+</body>
+</html>
